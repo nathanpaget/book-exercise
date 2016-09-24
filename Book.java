@@ -62,7 +62,14 @@ class Book
     }
 	public void setRefNumber(String ref)
 	{
-		refNumber=ref;
+		if(ref.length()==3)
+		{
+			refNumber=ref;
+		}	
+		else 
+		{	
+			System.out.println("ERROR: You must use a 3 character reference number");
+		}
 	}
 	public String getRefNumber()
 	{
